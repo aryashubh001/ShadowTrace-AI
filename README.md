@@ -41,36 +41,21 @@ The pipeline follows a **Reasoning-Verification** architecture:
 
 ### **2. Using Docker (Recommended)**
 Build and deploy the containerized service:
+
 ```powershell
 # Build the image
 docker build -t shadowtrace .
 
-Access the dashboard at: http://localhost:8501
-
-3. Local Setup
-Bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the dashboard
-streamlit run app.py
-📁 Project Structure
-Plaintext
-├── app.py                # Streamlit UI & Dashboard Logic
-├── shadow_trace.py       # Agentic Framework & Reasoning Engine
-├── Dockerfile            # Containerization configuration
-├── requirements.txt      # Production dependencies
-├── policy.json           # Intelligence-driven security policies
-└── README.md             # System documentation
-🧠 Diagnostic Workflow
-Ingestion: Consumes network logs representing billions of data events.
-
-Lineage Mapping: The agent traces the source, data type, and destination of each event.
-
-Autonomous Audit: The AI reasoning engine compares activity against policy.json.
-
-Verification: Pydantic ensures AI findings meet strict security guardrails.
-
-Reporting: Visual risk analytics are generated along with a professional PDF export.
 # Run the container
 docker run -p 8501:8501 shadowtrace
+```
+
+> **Note:** Access the dashboard at: `http://localhost:8501`
+
+### **3. Local Setup**
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+# Run the dashboard
+streamlit run app.py
