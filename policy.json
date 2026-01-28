@@ -1,0 +1,5 @@
+{
+  "restricted_domains": ["chatgpt.com", "claude.ai", "unknown-summarizer.io"],
+  "sensitive_data_types": ["source_code", "employee_records", "financial_data"],
+  "action_required": "Block and Audit"
+}
