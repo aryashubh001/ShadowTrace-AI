@@ -34,13 +34,16 @@ The pipeline follows a **Reasoning-Verification** architecture:
 ---
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
+```text
 ├── app.py                # Streamlit UI & Dashboard Logic
 ├── shadow_trace.py       # Agentic Framework & Reasoning Engine
 ├── Dockerfile            # Containerization configuration
 ├── requirements.txt      # Production dependencies
 ├── policy.json           # Intelligence-driven security policies
 └── README.md             # System documentation
-
+```
 ---
 ## ⚙️ Installation & Setup
 
