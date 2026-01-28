@@ -32,7 +32,15 @@ The pipeline follows a **Reasoning-Verification** architecture:
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
 ---
+## 📁 Project Structure
+├── app.py                # Streamlit UI & Dashboard Logic
+├── shadow_trace.py       # Agentic Framework & Reasoning Engine
+├── Dockerfile            # Containerization configuration
+├── requirements.txt      # Production dependencies
+├── policy.json           # Intelligence-driven security policies
+└── README.md             # System documentation
 
+---
 ## ⚙️ Installation & Setup
 
 ### **1. Prerequisites**
@@ -57,5 +65,6 @@ docker run -p 8501:8501 shadowtrace
 ```bash
 # Install dependencies
 pip install -r requirements.txt
+
 # Run the dashboard
 streamlit run app.py
